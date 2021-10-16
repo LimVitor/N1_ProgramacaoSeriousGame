@@ -259,7 +259,19 @@ MonoBehaviour:
   - eventID: 2
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1900619714}
+          m_TargetAssemblyTypeName: PJFly, Assembly-CSharp
+          m_MethodName: Fly
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &258923905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,6 +1748,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.35, y: 1.35}
   m_EdgeRadius: 0
+--- !u!1 &1900619713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2588372409885815691, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+  m_PrefabInstance: {fileID: 2170827304681410226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1900619714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900619713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9cfbf01ae0efe4da5e9f76823e4f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlyForce: {x: 0, y: 4}
 --- !u!1001 &2170827304681410226
 PrefabInstance:
   m_ObjectHideFlags: 0
