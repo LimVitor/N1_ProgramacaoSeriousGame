@@ -272,6 +272,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1326210526}
+          m_TargetAssemblyTypeName: FloorMovement, Assembly-CSharp
+          m_MethodName: Update
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &258923905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,7 +905,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240142750
 GameObject:
@@ -1095,6 +1107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326210524}
+  - component: {fileID: 1326210526}
   m_Layer: 0
   m_Name: Tela inicial
   m_TagString: Untagged
@@ -1125,8 +1138,24 @@ Transform:
   - {fileID: 582835841}
   - {fileID: 124432357}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326210526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326210523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc09397767e6664da74c589c17bb3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -1
+  floor:
+  - {fileID: 1326210524}
+  heigth: 3.2
 --- !u!1 &1426330692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,8 +1795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlyForce: {x: 0, y: 4}
-  speed: {x: 0, y: 0}
-  floor: {fileID: 0}
 --- !u!95 &1900619719
 Animator:
   serializedVersion: 3
@@ -1841,6 +1868,10 @@ PrefabInstance:
     - target: {fileID: 2588372409885815691, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
       propertyPath: m_Name
       value: Astro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+      propertyPath: m_SleepingMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
