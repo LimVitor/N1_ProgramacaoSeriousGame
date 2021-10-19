@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidControl : MonoBehaviour
+public class AsteroidControl : AsteroidMovement
 {
-    [SerializeField] private float speed;
+    [SerializeField] private Vector2 randomHeight;
+
     void Start()
     {
-        
+
+        onScrollPartRecycled += DoRandomHeight;
+
+        foreach (Transform asteroid in asteroids)
+        {
+            DoRandomHeight(asteroid);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void DoRandomHeight(Transform asteroid)
     {
-        Vector2 position = transform.position;
-
-        position = new Vector2(position.x - speed * Time.deltaTime, position.y);
-
-        transform.position = position;
-
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(-1, 0));
-
-        
+        float randomValue = Random.Range(randomHeight.x, randomHeight.y);
+        asteroid.position = new Vector2(asteroid.position.x, randomValue);
+    }
+    void OnPartRecycled(Transform asteroid)
+    {
+        DoRandomHeight(asteroid);
     }
 }

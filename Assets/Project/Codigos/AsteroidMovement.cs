@@ -1,28 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AsteroidMovement : MonoBehaviour
 {
-    [SerializeField] private Transform[] parts;
+    [SerializeField] protected Transform[] asteroids;
     [SerializeField] private Vector2 speed;
     [SerializeField] private float width;
-    private int _partsLength;
-    void Start()
+    private int _asteroidLength;
+    protected Action<Transform> onScrollPartRecycled;
+    void Awake()
     {
-        _partsLength = parts.Length;
+        _asteroidLength = asteroids.Length;
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (Transform p in parts)
-        {
-            p.Translate(speed * Time.deltaTime);
 
-            if(p.position.x < width * _partsLength/2 * -1)
+        foreach (Transform a in asteroids)
+        {
+            a.Translate(speed * Time.deltaTime);
+
+            if (a.position.x < width * _asteroidLength / 2 * -1)
             {
-                p.Translate(new Vector2(_partsLength * width, 0));
+                a.Translate(new Vector2(_asteroidLength * width, 0));
+                onScrollPartRecycled?.Invoke(a);
             }
         }
     }
