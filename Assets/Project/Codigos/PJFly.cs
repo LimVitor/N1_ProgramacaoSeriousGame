@@ -10,7 +10,7 @@ public class PJFly : MonoBehaviour
     private Animator _anim;
     [SerializeField] private AsteroidMovement asteroidMovement;
     private bool isDead;
-
+    [SerializeField] private int Score;
 
 
     void Start()
@@ -31,6 +31,9 @@ public class PJFly : MonoBehaviour
         _rb.velocity = Vector2.zero;
         _rb.AddForce(FlyForce, ForceMode2D.Impulse);
         _anim.SetBool("isFlying", true);
+
+        GameController.instance.totalScore += Score;
+        GameController.instance.UpdateScoreText();
     }
 
 
