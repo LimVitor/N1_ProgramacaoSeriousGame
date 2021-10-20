@@ -19,7 +19,7 @@ public class AsteroidInicial : MonoBehaviour
 
         transform.position = position;
 
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(2, 1));
 
         if(transform.position.x > max.x)
         {

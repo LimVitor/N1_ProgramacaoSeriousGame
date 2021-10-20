@@ -698,7 +698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.9, y: -63.7}
+  m_AnchoredPosition: {x: 115.900024, y: -63.69995}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &373755251
@@ -2231,7 +2231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 314.4, y: -63.7}
+  m_AnchoredPosition: {x: 314.4, y: -63.69995}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1508249555
@@ -3107,13 +3107,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Astro
       objectReference: {fileID: 0}
+    - target: {fileID: 2588372409885815691, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
       propertyPath: m_GravityScale
@@ -3122,6 +3130,14 @@ PrefabInstance:
     - target: {fileID: 4429283618885952680, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
       propertyPath: m_SleepingMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836831315393942409, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+      propertyPath: m_Size.y
+      value: 1.15804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836831315393942409, guid: 8a841e807d2702a4e939b722c3090478, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.57902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a841e807d2702a4e939b722c3090478, type: 3}

@@ -28,9 +28,11 @@ public class PJFly : MonoBehaviour
         }
 
         asteroidMovement.enabled = true;
+
+        _anim.SetBool("isFlying", true);
+
         _rb.velocity = Vector2.zero;
         _rb.AddForce(FlyForce, ForceMode2D.Impulse);
-        _anim.SetBool("isFlying", true);
 
         GameController.instance.totalScore += Score;
         GameController.instance.UpdateScoreText();
