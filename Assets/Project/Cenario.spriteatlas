@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cenario
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 1470a8da87de4eb44966e953ef10b55e, type: 3}
+    - {fileID: 2800000, guid: a781fc3ed7235ff49bc151757eaaf437, type: 3}
+    - {fileID: 2800000, guid: bc289c0f4fac9b44eb0047bebc25316a, type: 3}
+    - {fileID: 2800000, guid: 2bf6f07b07a95fa4b82d50ebaa4d46c2, type: 3}
+    - {fileID: 2800000, guid: 7531ee5749d7b3c41a9c675fd9e784e9, type: 3}
+    - {fileID: 2800000, guid: 978d6bdf0450ee141848bcd4b7d56114, type: 3}
+    - {fileID: 2800000, guid: dddd89db6df12524186d273282174949, type: 3}
+    - {fileID: 2800000, guid: 986c0b33c2d698e4292ef3f6b650d640, type: 3}
+    - {fileID: 2800000, guid: debef134526346940b471883e36516ad, type: 3}
+    - {fileID: 2800000, guid: 15e7c819e49d3df4f976d0108afc20ee, type: 3}
+    - {fileID: 2800000, guid: c4c9f83e178f8a743bb8e5099c83ffda, type: 3}
+    - {fileID: 2800000, guid: ccf41ef8b612c884a8cf0eff26696de0, type: 3}
+    - {fileID: 2800000, guid: 531796e321c43e9488fc22ad89f3921f, type: 3}
+    - {fileID: 2800000, guid: 4c7e75ab7e1903f4785dbfd035444e92, type: 3}
+    - {fileID: 2800000, guid: a1aa568a921b5c542a627167f51b1f4d, type: 3}
+    - {fileID: 2800000, guid: 81798902eea5e0c4caab6112ba05f783, type: 3}
+    - {fileID: 2800000, guid: 0ea2d438142d63f4da9a3d26c09921a0, type: 3}
+    - {fileID: 2800000, guid: f54556ea2c55aef46af457e96846a98c, type: 3}
+    - {fileID: 2800000, guid: d7c4331171b8f1d4da407a4bd6d4f8f4, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d7c4331171b8f1d4da407a4bd6d4f8f4, type: 3}
+  - {fileID: 21300000, guid: 81798902eea5e0c4caab6112ba05f783, type: 3}
+  - {fileID: 21300000, guid: 986c0b33c2d698e4292ef3f6b650d640, type: 3}
+  - {fileID: 21300000, guid: 531796e321c43e9488fc22ad89f3921f, type: 3}
+  - {fileID: 21300000, guid: debef134526346940b471883e36516ad, type: 3}
+  - {fileID: 21300000, guid: 7531ee5749d7b3c41a9c675fd9e784e9, type: 3}
+  - {fileID: 21300000, guid: 0ea2d438142d63f4da9a3d26c09921a0, type: 3}
+  - {fileID: 21300000, guid: ccf41ef8b612c884a8cf0eff26696de0, type: 3}
+  - {fileID: 21300000, guid: 15e7c819e49d3df4f976d0108afc20ee, type: 3}
+  - {fileID: 21300000, guid: a1aa568a921b5c542a627167f51b1f4d, type: 3}
+  - {fileID: 21300000, guid: 1470a8da87de4eb44966e953ef10b55e, type: 3}
+  - {fileID: 21300000, guid: f54556ea2c55aef46af457e96846a98c, type: 3}
+  - {fileID: 21300000, guid: 2bf6f07b07a95fa4b82d50ebaa4d46c2, type: 3}
+  - {fileID: 21300000, guid: 4c7e75ab7e1903f4785dbfd035444e92, type: 3}
+  - {fileID: 21300000, guid: dddd89db6df12524186d273282174949, type: 3}
+  - {fileID: 21300000, guid: c4c9f83e178f8a743bb8e5099c83ffda, type: 3}
+  - {fileID: 21300000, guid: a781fc3ed7235ff49bc151757eaaf437, type: 3}
+  - {fileID: 21300000, guid: bc289c0f4fac9b44eb0047bebc25316a, type: 3}
+  - {fileID: 21300000, guid: 978d6bdf0450ee141848bcd4b7d56114, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - VioletTree_03
+  - TileFull
+  - Stone_01 1
+  - Stone_03
+  - Stone_01
+  - SpaceBackGround
+  - VioletTree_01
+  - Stone_03 1
+  - Stone_02 1
+  - TileBack
+  - Box_01
+  - VioletTree_02
+  - Spike_01
+  - TileBack 1
+  - Spike_02
+  - Stone_02
+  - Box_01 1
+  - Spike_01 1
+  - Spike_02 1
+  m_RenderDataMap: {}
+  m_Tag: Cenario
+  m_IsVariant: 0
