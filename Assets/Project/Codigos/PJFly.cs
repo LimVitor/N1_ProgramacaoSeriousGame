@@ -50,6 +50,7 @@ public class PJFly : MonoBehaviour
             foreach (AsteroidMovement scroll in allScrolls)
             {
                 scroll.enabled = false;
+                GameController.instance.ShowGameOver();
             }
             isDead = true;
         }
