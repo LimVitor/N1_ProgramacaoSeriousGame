@@ -9,6 +9,7 @@ public class PJFly : MonoBehaviour
     private Rigidbody2D _rb;
     private Animator _anim;
     [SerializeField] private AsteroidMovement asteroidMovement;
+    //[SerializeField] private Panel UIinicial;
     private bool isDead;
     [SerializeField] private int Score;
 
@@ -28,6 +29,7 @@ public class PJFly : MonoBehaviour
         }
 
         asteroidMovement.enabled = true;
+        //UIinicial.enabled = false;
 
         _anim.SetBool("isFlying", true);
 
