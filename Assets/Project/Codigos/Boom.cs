@@ -8,6 +8,7 @@ public class Boom : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = (Random.Range(0.1f, 2.8f));
     }
 
     // Update is called once per frame
@@ -15,6 +16,7 @@ public class Boom : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+          
             audioSource.Play();
         }
     }
