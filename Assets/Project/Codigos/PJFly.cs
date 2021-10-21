@@ -9,13 +9,16 @@ public class PJFly : MonoBehaviour
     private Rigidbody2D _rb;
     private Animator _anim;
     [SerializeField] private AsteroidMovement asteroidMovement;
-    //[SerializeField] private Panel UIinicial;
+   
     private bool isDead;
     [SerializeField] private int Score;
 
+    public AudioSource audioSource;
 
     void Start()
     {
+
+        audioSource = GetComponent<AudioSource>();
         
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
@@ -23,13 +26,14 @@ public class PJFly : MonoBehaviour
 
    public void Fly()
     {
+       
         if (isDead)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         asteroidMovement.enabled = true;
-        //UIinicial.enabled = false;
+       
 
         _anim.SetBool("isFlying", true);
 
@@ -38,6 +42,8 @@ public class PJFly : MonoBehaviour
 
         GameController.instance.totalScore += Score;
         GameController.instance.UpdateScoreText();
+
+        audioSource.Play();
     }
 
 
@@ -45,6 +51,7 @@ public class PJFly : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Asteroid"))
         {
+            
             Death();
         }
 

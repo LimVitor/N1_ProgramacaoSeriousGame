@@ -8,19 +8,33 @@ public class FloorMovement : MonoBehaviour
     [SerializeField] private Transform[] floor;
     [SerializeField] private float heigth;
 
+  
+
+    
+
+
+
     public void Start()
     {
         this.enabled = false;
+      
+
+
     }
     public void floorMovement()
     {
+      
+
         foreach (Transform f in floor)
         {
             this.enabled = true;
+           
+      
             f.Translate(new Vector2(0, speed * Time.deltaTime));
             if (f.position.y < heigth * -1)
             {
                 Destroy(gameObject);
+                
             }
         }
     }
@@ -28,5 +42,7 @@ public class FloorMovement : MonoBehaviour
     public void Update()
     {
         floorMovement();
+       
+       
     }
 }
