@@ -715,6 +715,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 987594474}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: set_outputAudioMixerGroup
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 24300002, guid: 54853bef4899f274ca857021cfeaeca2, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Audio.AudioMixerGroup,
+              UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &258923905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -821, y: -1554}
+  m_AnchoredPosition: {x: -821, y: -1191}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416380594
@@ -1810,36 +1823,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1326210524}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &656870190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 656870191}
-  m_Layer: 0
-  m_Name: FF70D4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &656870191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656870190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 1299.1875, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &697310426
 GameObject:
@@ -3360,7 +3343,7 @@ AudioSource:
   m_GameObject: {fileID: 987594473}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 54853bef4899f274ca857021cfeaeca2, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 711ff5b5cba9dbe419707c1fcfcc7d1c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8f728b88388bb4a7ea8a357e4a8f1f42, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -4245,7 +4228,7 @@ MonoBehaviour:
   - {fileID: 542601525}
   speed: {x: -2, y: 0}
   width: 5
-  randomHeight: {x: -5.46, y: 3.51}
+  randomHeight: {x: -5.46, y: 4.51}
 --- !u!4 &1174280692
 Transform:
   m_ObjectHideFlags: 0
@@ -7066,7 +7049,7 @@ MonoBehaviour:
   FlyForce: {x: 0, y: 4}
   asteroidMovement: {fileID: 1174280691}
   Score: 1
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1900619720}
 --- !u!95 &1900619719
 Animator:
   serializedVersion: 3

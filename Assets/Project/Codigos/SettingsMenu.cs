@@ -5,12 +5,15 @@ using UnityEngine.Audio;
 
 public class SettingsMenu : MonoBehaviour
 {
+
+
    [SerializeField] private AudioMixer audioMixer;
    public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume",volume);
     }
 
+   
     public void Set30FPS()
     {
         Application.targetFrameRate = 30;
